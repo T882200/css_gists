@@ -6,6 +6,8 @@
     <title>CSS*Gists</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   
@@ -15,47 +17,63 @@
   <body>
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-lg-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#explore">Explore</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#adventure">Adventure</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                  <!--<li class="nav-item dropdown">-->
-                  <!--  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                  <!--    Dropdown-->
-                  <!--  </a>-->
-                  <!--  <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-                  <!--    <a class="dropdown-item" href="#">Action</a>-->
-                  <!--    <a class="dropdown-item" href="#">Another action</a>-->
-                  <!--    <div class="dropdown-divider"></div>-->
-                  <!--    <a class="dropdown-item" href="#">Something else here</a>-->
-                  <!--  </div>-->
-                  <!--</li>-->
-                  <!--<li class="nav-item">-->
-                  <!--  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
-                  <!--</li>-->
-                </ul>
-              </div>
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <!--<li class="nav-item dropdown">-->
+      <!--  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+      <!--    Dropdown-->
+      <!--  </a>-->
+      <!--  <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+      <!--    <a class="dropdown-item" href="#">Action</a>-->
+      <!--    <a class="dropdown-item" href="#">Another action</a>-->
+      <!--    <div class="dropdown-divider"></div>-->
+      <!--    <a class="dropdown-item" href="#">Something else here</a>-->
+      <!--  </div>-->
+      <!--</li>-->
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Multi - columns
+        </button>
+        <div class="dropdown-menu dropdown-multicol2" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-col">
+            <a class="dropdown-item" href="./acmew3css/index.html">W3.css Homepage</a>
+            <a class="dropdown-item" href="#">Bananas</a>
+            <a class="dropdown-item" href="#">Apples</a>
           </div>
-        </nav>
+          <div class="dropdown-col">
+            <a class="dropdown-item" href="#">Potatoes</a>
+            <a class="dropdown-item" href="#">Leeks</a>
+            <a class="dropdown-item" href="#">Cauliflowers</a>
+          </div>
+          <div class="dropdown-col">
+            <a class="dropdown-item" href="#">Beef</a>
+            <a class="dropdown-item" href="#">Pork</a>
+            <a class="dropdown-item" href="#">Venison</a>
+          </div>
+        </div>
+      </div>
+      <!--end of multicol dropdown-->
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
       </header>
       
       <div class="jumbotron jumbotron-fluid height100p banner" id="home">
